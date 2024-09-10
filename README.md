@@ -41,30 +41,30 @@ Resaposta no diretorio lib
 **Tabela: clientes**
 ----------------
 
-| cliente_id (PK)  |
-| razao_social     |
+| cliente_id (PK) |
+| razao_social    |
 | estado_id (FK)  |
 
 **Tabela: telefones**
 -----------------
 
-| telefone_id (PK)  |
-| cliente_id (FK)    |
-| tipo_id (FK)        |
-| numero              |
+| telefone_id (PK) |
+| cliente_id (FK)  |
+| tipo_id (FK)     |
+| numero           |
 
 **Tabela: tipos_telefone**
 ----------------------
 
-| tipo_id (PK)     |
-| descricao        |
+| tipo_id (PK)|
+| descricao   |
 
 **Tabela: estados**
 ---------------
 
-| estado_id (PK)   |
-| sigla                  |
-| nome                |
+| estado_id (PK)|
+| sigla         |
+| nome          |
 
 - clientes.estado_id → estados.estado_id (FK)
 - telefones.cliente_id → clientes.cliente_id (FK)
